@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>إدارة الدحيح</title><link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
+<body><header class="top"><img src="assets/eldaheeh-logo.jpg" alt="شعار الدحيح"><div><b>الدحّيِـــح</b><small>لوحة الإشراف والإدارة</small></div><a href="index.html" class="admin-link">واجهة الطالب</a></header>
+<main class="wrap"><section class="hero"><span class="tag">مساحة الإدارة</span><h1>لوحة إشراف الدحيح</h1><p>إدارة الامتحانات والأسئلة ومتابعة محاولات الطلاب.</p></section>
+<section id="login" class="panel"><h2>دخول المشرف</h2><label>البريد الإلكتروني<input id="adminEmail" type="email"></label><label>كلمة المرور<input id="adminPassword" type="password"></label><button id="loginBtn">تسجيل الدخول</button><p id="loginMsg" class="msg"></p></section>
+<section id="dashboard" hidden>
+<div class="panel"><div class="row"><h2>الامتحانات</h2><button id="newExamBtn" class="secondary">إنشاء امتحان</button></div><div id="examList"></div></div>
+<div class="panel"><div class="row"><h2 id="editorTitle">محرر الامتحان</h2><button id="saveExamBtn">حفظ بيانات الامتحان</button></div>
+<label>اسم الامتحان<input id="examTitle" placeholder="مثال: اختبار التنفيذ الجبري"></label><label>وصف الامتحان<input id="examDescription"></label>
+<label class="inline"><input id="examPublished" type="checkbox"> نشر الامتحان للطلاب</label>
+<div class="row"><h3>الأسئلة</h3><button id="addQuestionBtn" class="secondary">إضافة سؤال</button></div><div id="questionEditor"></div>
+<button id="saveQuestionsBtn">حفظ الأسئلة</button><p id="adminMsg" class="msg"></p></div>
+<div class="panel"><h2>محاولات الطلاب</h2><div id="attempts"></div></div>
+</section></main><footer>الدحّيِـــح_ Eldaheeh • لوحة إدارة خاصة</footer><script src="config.js"></script><script src="admin.js"></script></body></html>
